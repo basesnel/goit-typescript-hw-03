@@ -1,4 +1,4 @@
-# goit-typescript-hw-02
+# goit-typescript-hw-03
 
 Commands for local typescript:
 
