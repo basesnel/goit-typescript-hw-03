@@ -1,0 +1,22 @@
+declare class Key {
+    private signature;
+    getSignature(): number;
+}
+declare class Person {
+    private key;
+    constructor(key: Key);
+    getKey(): Key;
+}
+declare class House {
+    protected key: Key;
+    protected door: boolean;
+    constructor(key: Key);
+    private tenants;
+    comeIn(person: Person): void;
+    openDoor(key: Key): void;
+}
+declare class MyHouse extends House {
+    openDoor(key: Key): void;
+}
+export { Key, Person, MyHouse };
+//# sourceMappingURL=4.d.ts.map
