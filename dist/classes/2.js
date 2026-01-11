@@ -12,18 +12,17 @@
 
   Необхідно реалізувати в класі Manager конструктор, який викликатиме конструктор суперкласу та збільшуватиме salary на 10000.
 
-*/
-/* class Employee {
-  // Заповніть модифікатори доступу
-  name: string;
-  department: string;
-  salary: number;
+  class Employee {
+    // Заповніть модифікатори доступу
+    name: string;
+    department: string;
+    salary: number;
 
-  constructor(name: string, department: string, salary: number) {
-    this.name = name;
-    this.department = department;
-    this.salary = salary;
-  }
+    constructor(name: string, department: string, salary: number) {
+      this.name = name;
+      this.department = department;
+      this.salary = salary;
+    }
 
   getEmployeeDetails() {
     return `Name: ${this.name}, Department: ${this.department}, Salary: ${this.salary}`;
@@ -32,9 +31,9 @@
 
 class Manager extends Employee {
   // Реалізуйте конструктор та збільшіть salary на 10000
-} */
+}
+*/
 class Employee {
-    // Заповніть модифікатори доступу
     constructor(name, department, salary) {
         this.name = name;
         this.department = department;
@@ -45,7 +44,6 @@ class Employee {
     }
 }
 class Manager extends Employee {
-    // Реалізуйте конструктор та збільшіть salary на 10000
     constructor(name, department, salary) {
         super(name, department, salary);
         this.salary += 10000;

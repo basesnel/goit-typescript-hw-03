@@ -1,7 +1,7 @@
 declare class Employee {
     name: string;
-    department: string;
-    salary: number;
+    private department;
+    protected salary: number;
     constructor(name: string, department: string, salary: number);
     getEmployeeDetails(): string;
 }
