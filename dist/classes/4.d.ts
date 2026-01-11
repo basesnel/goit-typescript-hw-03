@@ -10,8 +10,8 @@ declare class Person {
 declare class House {
     protected key: Key;
     protected door: boolean;
-    constructor(key: Key);
     private tenants;
+    constructor(key: Key);
     comeIn(person: Person): void;
     openDoor(key: Key): void;
 }

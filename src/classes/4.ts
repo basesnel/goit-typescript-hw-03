@@ -50,9 +50,8 @@ class Person {
 
 class House {
   protected door: boolean = false;
-  constructor(protected key: Key) {}
-
   private tenants: Person[] = [];
+  constructor(protected key: Key) {}
 
   comeIn(person: Person): void {
     if (this.door) {
