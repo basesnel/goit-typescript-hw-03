@@ -7,7 +7,7 @@ declare class Person {
     constructor(key: Key);
     getKey(): Key;
 }
-declare class House {
+declare abstract class House {
     protected key: Key;
     protected door: boolean;
     private tenants;

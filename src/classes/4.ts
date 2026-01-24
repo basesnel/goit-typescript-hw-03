@@ -48,7 +48,7 @@ class Person {
   }
 }
 
-class House {
+abstract class House {
   protected door: boolean = false;
   private tenants: Person[] = [];
   constructor(protected key: Key) {}
